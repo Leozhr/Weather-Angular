@@ -5,11 +5,8 @@ import { AppComponent } from './app.component';
 
 import { PagesModule } from './pages/pages.module';
 
-import { ErrorComponent } from './pages/error/error.component';
-import { HomeComponent } from './pages/home/home.component';
-
 @NgModule({
-  declarations: [AppComponent, ErrorComponent, HomeComponent],
+  declarations: [AppComponent],
   imports: [BrowserModule, AppRoutingModule, PagesModule],
   providers: [],
   bootstrap: [AppComponent],
