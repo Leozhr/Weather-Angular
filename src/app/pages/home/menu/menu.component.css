@@ -1,0 +1,60 @@
+.weather-menu {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.weather-info-2{
+  -webkit-backdrop-filter: blur(18px);
+  background-color: transparent;
+  backdrop-filter: blur(18px);
+  padding: 100px 70px;
+  height: 100vh;
+  border-left: 1px solid rgba(0, 0, 0, 0.062);
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+form input{
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgb(82, 82, 82);
+  font-size: 1.5rem;
+  padding: 10px 0px;
+  width: 100%;
+  transition: .3s;
+  cursor: pointer;
+  color: rgb(133, 133, 133);
+}
+
+form input:focus, form input:hover{
+  color: #fdfdfd;
+  transition: .3s;
+  border-bottom: 1px solid rgb(155, 155, 155);
+  outline: 0;
+}
+
+.temp-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.weather-temp li{
+  display: flex;
+  justify-content: space-between;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+p, span {
+  font-size: 1.2rem;
+}
+
+p {
+  color: rgb(192, 192, 192)
+}

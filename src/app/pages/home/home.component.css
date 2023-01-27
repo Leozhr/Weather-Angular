@@ -1,0 +1,10 @@
+.home {
+  height: 100vh;
+  overflow-y: hidden;
+  color: #fff;
+}
+
+img {
+  width: 100%;
+  position: fixed;
+}
