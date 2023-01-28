@@ -13,24 +13,24 @@
         <h2>Detalhes do Tempo</h2>
         <ul class="temp-list">
           <li>
-            <p>SOL</p>
-            <span>10%</span>
+            <p>Temperatura</p>
+            <span>{{map?.main?.["temp"]}}°</span>
           </li>
           <li>
-            <p>SOL</p>
-            <span>10%</span>
+            <p>Temperatura Maxima</p>
+            <span>{{map?.main?.["temp_max"]}}°</span>
           </li>
           <li>
-            <p>SOL</p>
-            <span>10%</span>
+            <p>Temperatura Minima</p>
+            <span>{{map?.main?.["temp_min"]}}°</span>
           </li>
           <li>
-            <p>SOL</p>
-            <span>10%</span>
+            <p>Umidade</p>
+            <span>{{map?.main?.["humidity"]}}%</span>
           </li>
           <li>
-            <p>SOL</p>
-            <span>10%</span>
+            <p>Vento</p>
+            <span>{{map?.wind?.["speed"]}} Km/h</span>
           </li>
         </ul>
       </div>
