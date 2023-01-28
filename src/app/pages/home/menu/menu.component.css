@@ -3,10 +3,44 @@
   grid-template-columns: 2fr 1fr;
 }
 
+.weather-info-1{
+  display: flex;
+  gap: 15px;
+  align-self: end;
+  align-items: center;
+  padding: 90px 60px;
+  gap: 20px;
+}
+
+.weather-info-1 h1{
+  font-size: 10rem;
+}
+
+.weather-info-1 p{
+  color: #fdfdfd;
+  font-size: 6rem;
+}
+
+.weather-info-1 span{
+  font-size: 1.5rem;
+}
+
+.intro-1, .intro-2{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+form button{
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
 .weather-info-2{
-  -webkit-backdrop-filter: blur(18px);
-  background-color: transparent;
-  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(22px);
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(22px);
   padding: 100px 70px;
   height: 100vh;
   border-left: 1px solid rgba(0, 0, 0, 0.062);
@@ -18,26 +52,32 @@
 form input{
   background: transparent;
   border: none;
-  border-bottom: 1px solid rgb(82, 82, 82);
+  border-bottom: 1px solid rgb(190, 190, 190);
   font-size: 1.5rem;
   padding: 10px 0px;
   width: 100%;
   transition: .3s;
-  cursor: pointer;
-  color: rgb(133, 133, 133);
+  color: #fdfdfd;
+}
+
+form div{
+  display: flex;
+}
+
+form img{
+  padding: 0px 5px;
 }
 
 form input:focus, form input:hover{
-  color: #fdfdfd;
   transition: .3s;
-  border-bottom: 1px solid rgb(155, 155, 155);
+  border-bottom: 1px solid rgb(253, 253, 253);
   outline: 0;
 }
 
 .temp-list {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 40px;
 }
 
 .weather-temp li{
@@ -48,7 +88,7 @@ form input:focus, form input:hover{
 h2 {
   font-weight: 500;
   font-size: 1.5rem;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 p, span {

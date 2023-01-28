@@ -8,14 +8,15 @@ import { ApiService } from 'src/app/services/api.service';
 })
 export class MenuComponent implements OnInit {
   map: any;
+  temp: any;
 
   constructor(private location: ApiService) {}
 
   ngOnInit(): void {
     this.location.Weather().subscribe(
       (res) => {
-        console.log(res);
         this.map = res;
+        this.temp = parseInt(this.map.main.temp);
       },
       (err) => console.log(err)
     );

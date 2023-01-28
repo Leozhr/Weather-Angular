@@ -10,7 +10,7 @@ export class ApiService {
 
   Weather(): Observable<any> {
     return this.http.get(
-      `https://api.openweathermap.org/data/2.5/weather?q=brasil&units=metric&appid=efcc998c6db4f0a1443ece51a53919f3&lang=pt_br`
+      `https://api.openweathermap.org/data/2.5/weather?q=madagascar&units=metric&appid=efcc998c6db4f0a1443ece51a53919f3&lang=pt_br`
     );
   }
 }

@@ -1,11 +1,24 @@
 <div class="weather-menu">
-  <div>
 
+  <div class="weather-info-1">
+    <h1>{{temp}}°</h1>
+    <div class="intro-1">
+      <p>{{map?.["name"]}}</p>
+      <span>13:45 - fevereiro de 2023</span>
+    </div>
+    <div class="intro-2">
+    </div>
   </div>
+
   <div class="weather-info-2">
     <div class="weather-search">
       <form action="">
-        <input type="text" name="search" placeholder="Search">
+        <div>
+          <input type="text" name="search" placeholder="Search">
+          <button id="search">
+            <img src="assets/images/icons/search.svg" alt="">
+          </button>
+        </div>
       </form>
     </div>
     <div class="weather-info">
@@ -13,16 +26,12 @@
         <h2>Detalhes do Tempo</h2>
         <ul class="temp-list">
           <li>
+            <p>Clima</p>
+            <span>{{map?.weather[0]?.["description"]}}</span>
+          </li>
+          <li>
             <p>Temperatura</p>
-            <span>{{map?.main?.["temp"]}}°</span>
-          </li>
-          <li>
-            <p>Temperatura Maxima</p>
-            <span>{{map?.main?.["temp_max"]}}°</span>
-          </li>
-          <li>
-            <p>Temperatura Minima</p>
-            <span>{{map?.main?.["temp_min"]}}°</span>
+            <span>{{temp}}°</span>
           </li>
           <li>
             <p>Umidade</p>
