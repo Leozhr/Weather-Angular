@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { locateSearch } from 'src/interface/weather';
 
 @Injectable({
   providedIn: 'root',
@@ -8,9 +9,9 @@ import { Observable } from 'rxjs';
 export class ApiService {
   constructor(private http: HttpClient) {}
 
-  Weather(): Observable<any> {
+  Weather(city: string): Observable<any> {
     return this.http.get(
-      `https://api.openweathermap.org/data/2.5/weather?q=madagascar&units=metric&appid=efcc998c6db4f0a1443ece51a53919f3&lang=pt_br`
+      `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=efcc998c6db4f0a1443ece51a53919f3&lang=pt_br`
     );
   }
 }

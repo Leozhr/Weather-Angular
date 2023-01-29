@@ -12,10 +12,10 @@
 
   <div class="weather-info-2">
     <div class="weather-search">
-      <form action="">
+      <form action="" (submit)="Search(city)" [formGroup]="forms">
         <div>
-          <input type="text" name="search" placeholder="Search">
-          <button id="search">
+          <input type="text" name="search" placeholder="Search" formControlName="result" #city>
+          <button id="search" type="submit">
             <img src="assets/images/icons/search.svg" alt="">
           </button>
         </div>
