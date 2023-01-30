@@ -1,8 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { timer } from 'rxjs';
 import { ApiService } from 'src/app/services/api.service';
-import { locateSearch } from 'src/interface/weather';
 
 @Component({
   selector: 'app-menu',
@@ -15,6 +13,8 @@ export class MenuComponent implements OnInit {
   map: any;
   temp: number;
   icon: string;
+
+  @Input() change: string;
 
   constructor(private location: ApiService, private fb: FormBuilder) {}
 
@@ -39,7 +39,6 @@ export class MenuComponent implements OnInit {
         this.map = result;
         this.temp = parseInt(this.map.main.temp);
         this.icon = `http://openweathermap.org/img/wn/${this.map.weather[0].icon}@2x.png`;
-        console.log(this.map);
       },
       error: () => {},
     });
