@@ -155,33 +155,39 @@ p {
 }
 
 @media screen and (max-width: 650px) {
-  .sub{
-    font-size: 1.75rem;
+  .weather-info-1 h1{
+    font-size: 6rem;
+  }
+
+  form input {
+    border: 1px solid rgb(190, 190, 190);
+    margin-bottom: 20px;
+    padding: 5px 5px;
+  }
+
+  button img {
+    display: none;
   }
 
   .temp-list {
-    gap: 25px;
+    gap: 10px;
   }
 
   .weather-info-1{
-    justify-self: start;
-    padding: 50px 50px;
-    margin-bottom: 50px;
-  }
-
-  .weather-info-1 h1{
-    font-size: 7rem;
+    padding: 10px 40px;
   }
 
   .weather-info-1 p{
-    font-size: 2rem;
+    font-size: 1.75rem;
+  }
+
+  .weather-info-1 span{
+    font-size: 1.75rem;
   }
 
   .weather-info-2{
-    padding: 50px 35px;
-    gap: 60px;
-    margin: 0px 20px;
-    border-radius: 10px;
+    padding: 30px 35px 50px 35px;
+    margin: 30px 0px;
     gap: 30px;
   }
 
