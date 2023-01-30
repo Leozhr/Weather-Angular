@@ -1,3 +1,8 @@
 export class locateSearch {
-  name: string;
+  Climax(temp: any) {
+    switch (temp) {
+      case 'Oranges':
+        break;
+    }
+  }
 }

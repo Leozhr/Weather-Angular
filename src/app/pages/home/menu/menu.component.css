@@ -1,31 +1,46 @@
 .weather-menu {
   display: grid;
   grid-template-columns: 2fr 1fr;
+  text-shadow: 1px 2px 2px black;
+  text-transform: capitalize;
+}
+
+.info-description{
+  display: flex;
+  align-items: center;
+  margin-top: -20px;
+}
+
+img {
+  display: inline-block;
 }
 
 .weather-info-1{
+  color: #fdfdfd;
   display: flex;
   gap: 15px;
   align-self: end;
   align-items: center;
-  padding: 90px 60px;
+  padding: 90px 90px;
   gap: 20px;
 }
 
 .weather-info-1 h1{
-  font-size: 10rem;
+  font-size: 14rem;
 }
 
 .weather-info-1 p{
   color: #fdfdfd;
-  font-size: 6rem;
+  font-size: 8rem;
 }
 
 .weather-info-1 span{
-  font-size: 1.5rem;
+  margin-left: 5px;
+  font-size: 2rem;
+  color: #f0f0f0;
 }
 
-.intro-1, .intro-2{
+.intro-2{
   display: flex;
   flex-direction: column;
   gap: 6px;
@@ -43,7 +58,7 @@ form button{
   backdrop-filter: blur(22px);
   padding: 100px 70px;
   height: 100vh;
-  border-left: 1px solid rgba(0, 0, 0, 0.062);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 15px;
   display: flex;
   flex-direction: column;
   gap: 100px;
@@ -53,7 +68,7 @@ form input{
   background: transparent;
   border: none;
   border-bottom: 1px solid rgb(190, 190, 190);
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   padding: 10px 0px;
   width: 100%;
   transition: .3s;
@@ -74,6 +89,10 @@ form input:focus, form input:hover{
   outline: 0;
 }
 
+form input::placeholder{
+  color: rgb(190, 190, 190);
+}
+
 .temp-list {
   display: flex;
   flex-direction: column;
@@ -87,12 +106,12 @@ form input:focus, form input:hover{
 
 h2 {
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   margin-bottom: 40px;
 }
 
 p, span {
-  font-size: 1.2rem;
+  font-size: 1.75rem;
 }
 
 p {

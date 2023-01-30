@@ -2,11 +2,12 @@
 
   <div class="weather-info-1">
     <h1>{{temp}}°</h1>
-    <div class="intro-1">
+    <div class="info-name">
       <p>{{map?.["name"]}}</p>
-      <span>13:45 - fevereiro de 2023</span>
-    </div>
-    <div class="intro-2">
+      <div class="info-description">
+        <span>{{map?.weather[0]?.["description"]}}</span>
+        <img [src]="icon" alt="">
+      </div>
     </div>
   </div>
 
@@ -27,7 +28,7 @@
         <ul class="temp-list">
           <li>
             <p>Clima</p>
-            <span>{{map?.weather[0]?.["description"]}}</span>
+            <span #climax>{{map?.weather[0]?.["description"]}}</span>
           </li>
           <li>
             <p>Temperatura</p>
